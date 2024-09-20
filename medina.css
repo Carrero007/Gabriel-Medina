@@ -1,0 +1,351 @@
+/*Arquivo CSS Site-Medina*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #00000071;
+    font-family: 'Times New Roman', serif, verdana;
+    margin-top: 5px;
+}
+
+#header {
+    width: 900px;
+    height: 100px;
+    margin: 0px auto;
+    background: #F8F8FF;
+    display: flex; /* Usar flexbox para alinhar itens na mesma linha */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+#header h1 {
+    display: flex; /* Usar flexbox para o alinhamento */
+    align-items: center; /* Centraliza verticalmente a imagem */
+    margin: 0; /* Remover margens */
+    margin-left: 30px; 
+}
+
+#nav { 
+    list-style: none; /* Retira marcadores */
+    padding-left: 0;
+    display: flex; /* Usar flexbox para alinhamento */
+    margin-left: 25px; /* Diminuir a margem esquerda para aproximar da imagem */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+#nav li {
+    margin-left: 20px; /* Diminuir a margem esquerda entre os itens de navegação */
+}
+
+#nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 8px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    border-bottom: 5px solid #FF0000;
+}
+
+ul#nav a.ativa {
+    border-bottom: 5px solid #a200ff;
+}
+
+
+/*fim do cabeçalho */
+/* área do banner */
+#banner {
+    position: relative;
+    background-image: url('img/medina7.jpg');
+    margin-top: 30px;
+    width: 900px;
+    height: 500px;
+    background-size: cover;
+    margin: 0px auto;
+}
+
+/* texto dentro do banner */
+#banner .h {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, verdana;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px rgba(193, 156, 223, 1.0);
+    top: 40px;
+    /* Distância do topo do banner */
+    left: 150px;
+    /* Distância da borda esquerda do banner */
+}
+
+/*  area rodapé */
+#footer {
+    width: 900px;
+    height: 70px;
+    background: #000000;
+    margin: 0 auto;/* Centraliza o footer */
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#footer p {
+    font-size: 12px;
+    text-align: center;
+    color: antiquewhite;
+}
+/* fim area rodape */
+/*Codificação da página Sobre*/
+#info {
+    width: 900px;
+    height: 2200px;
+    background: #ddedff;
+    margin: 15px auto;
+    padding-left: 5px;
+}
+
+.cont {
+    width: 350px;
+    padding-top: 10px;
+    margin: 7px 40px;
+    float: left;
+}
+
+.cont p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* FIM Codificação da página Sobre*/
+/*Codificação da página destaque*/
+#destaque {
+    width: 900px;
+    height: 2000px;
+    background: #ddedff;
+    margin: 15px auto;
+    padding-left: 5px;
+}
+
+.info1 {
+    width: 350px;
+    margin: 5px 8px;
+    float: left;
+}
+
+.info1 h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info1 ul {
+    padding-top: 15px;
+    font-size: 22px;
+    list-style: none;
+    /* Remove os marcadores */
+    padding-left: 0;
+    /* Remove o recuo */
+}
+
+.info1 li {
+    margin-bottom: 10px;
+    /* Adiciona espaço entre os itens da lista */
+}
+
+/*fim da página destaque*/
+/* inicio area DESAFIO */
+#section {
+    width: 100%;
+    max-width: 900px;
+    background: #ddedff;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    width: calc(50% - 16px);
+    margin: 8px;
+}
+
+.article h1 {
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article p {
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#banner1 {
+    position: relative;
+    background-image: url('img/medina8.jpg');
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    background-size: cover;
+    margin: 0px auto;
+}
+
+#banner1 .h {
+    position: absolute;
+    font-family: 'Trebuchet MS', Arial, sans-serif, verdana;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px rgba(193, 156, 223, 1.0);
+    top: 40px;
+    left: 150px;
+}
+
+/* fim area DESAFIOS */
+
+/*Codificação da página MEDALHAS*/		
+#conteudo1 {
+    width: 900px;
+    height: 400px;
+    background: #ddedff;
+    margin: 15px auto;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.artigo1 {
+    width: 350px;
+    margin: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;       /* Centraliza o texto */
+}
+.artigo1 h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.artigo1 ul {
+    padding-top: 15px;
+    font-size: 17px;
+    list-style: none;
+    padding-left: 0px;
+}
+.artigo1 img {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+}
+
+/*fim da página MEDALHAS*/	
+/* codificação página bibliografia*/
+#bibli {
+    width: 900px;
+    height: 960px;
+    background: #ddedff;
+    margin: 15px auto;
+    padding-left: 5px;
+}
+
+.beautiful-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    padding-top: 25px;
+    color: #fff;
+    background-color: #4285F4;
+    /* Azul do Google */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.beautiful-button:hover {
+    background-color: #357ae8;
+    /* Azul mais escuro para o efeito hover */
+    transform: translateY(-2px);
+    /* Efeito de elevação */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 175px;
+    /* Altura total da janela para centralização vertical */
+}
+
+/* fim da codificação página bibliografia*/
+/* Codificação da página contato */
+#section_c {
+    display: flex; /* Usando flexbox para layout */
+    justify-content: space-between; /* Ajusta o espaço entre os elementos */
+    align-items: flex-start; /* Alinha os itens no início */
+    width: 900px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    background: #ddedff;
+    margin: 1px auto;
+}
+
+.contato {
+    width: 400px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    margin: 5px 5px;
+}
+
+.contato h1 {
+    font-size: 25px;
+}
+
+.contato textarea {
+    resize: none;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*RESPONSIVIDADE celulares	*/
+@media screen and (min-width:330px) and (max-width:480px){
+    body, div{}
+#footer { margin-left:0px;}
+}
+
+/*RESPOVIVIDADE Ipad  e ipad mini*/
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+    body, div{}
+    #footer { margin-left:0px;}		
+}	
+
+/*RESPONSIVIDADE ipad air	*/
+@media screen and (min-width:820px) and (max-width:1180px){
+    body, div{}
+#footer { margin-left:9px;}
+}
+
+/*RESPONSIVIDADE ipad pro	*/
+@media screen and (min-width:1024px) and (max-width:1366px){
+    body, div{}
+#footer { margin-left:112px;}
+}
+
+/*RESPONSIVIDADE Nokia Lumia 520 */
+@media screen and (min-width:320px) and (max-width:533px){
+    body, div{}
+#footer { margin-left:1px;}
+}
+
+/*RESPONSIVIDADE next hub max	*/
+@media screen and (min-width:1280px) and (max-width:1281px){
+    body, div{}
+#footer { margin-left:240px;}
+}
